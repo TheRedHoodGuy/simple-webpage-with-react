@@ -1,4 +1,5 @@
 import Image from '../../assets/images/image-web-3-mobile.jpg'
+import Sidearticles  from './Sidearticles'
 
 const Article = () => {
     return (
@@ -16,12 +17,14 @@ const Article = () => {
                         <a href="#" target="_blank" className="w-fit mt-7 text-[14px] tracking-[0.32em] uppercase font-bold text-white_c py-[20px] px-[34px] bg-red_c">read more</a>
                     </div>
                 </div>
-                <div className="mt-16 w-full bg-black_c flex px-[22px]">
+                <div className="mt-16 w-full bg-black_c flex flex-col px-[22px]">
                     <div className="mt-7">
                         <h2 className="text-[32px] font-[700] text-orange_c">New</h2>
                     </div>
-                    <div className="mt-[40px]">
-                        <h3></h3>
+                    <div className="flex flex-col mt-[42px]">
+                        <Sidearticles heading="Hydrogen VS Electric Cars" content="Will hydrogen-fueled cars ever catch up to EVs?"></Sidearticles>
+                        <Sidearticles c_class="mt-9" heading="The Downsides of AI Aristry" content="What are the possible adverse effects of on-demand AI image generation?"></Sidearticles>
+                        <Sidearticles c_class="mt-9" heading="Is VC Funding Drying Up" content="Private funding by VC firms is down 50% YOY. We take a look at what that means"></Sidearticles>
                     </div>
                 </div>
             </article>
