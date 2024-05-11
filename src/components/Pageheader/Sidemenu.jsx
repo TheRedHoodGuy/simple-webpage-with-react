@@ -15,8 +15,8 @@ const Sidemenu = () => {
             isMenu ? `block` : `hidden`
           }`}
         ></div>
-        <div className="absolute z-10 right-[15px] text-right w-60">
-          <button onClick={toggleMenu}>
+        <div className="absolute top-0 pt-7 z-10 right-0 bg-white_c text-right w-60">
+          <button onClick={toggleMenu} className="mr-[15px]">
             <img
               className={`w-7 ${isMenu ? `mr-[-2px]` : `mr-0`}`}
               src={isMenu ? close : Menu}
@@ -24,7 +24,7 @@ const Sidemenu = () => {
             />
           </button>
           <section
-            className={`h-screen pt-20 text-left pl-4 bg-white_c ${
+            className={`h-screen pt-20 text-left pl-4  ${
               isMenu ? `block` : `hidden`
             }`}
           >
