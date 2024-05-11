@@ -10,7 +10,12 @@ const Sidemenu = () => {
   return (
     <>
       <div className="">
-        <div className="absolute right-[15px] text-right w-60">
+        <div
+          className={`absolute left-0 top-0 z-15 h-screen w-screen bg-[#000] bg-opacity-75 ${
+            isMenu ? `block` : `hidden`
+          }`}
+        ></div>
+        <div className="absolute z-10 right-[15px] text-right w-60">
           <button onClick={toggleMenu}>
             <img
               className={`w-7 ${isMenu ? `mr-[-2px]` : `mr-0`}`}
