@@ -1,7 +1,7 @@
 const Imgdivs = ({image, i_head, i_cont, num}) => {
     return(
         <>
-            <div className="flex mb-8">
+            <div className="flex mb-8 items-center justify-start">
                 <div className="h-full w-[200px] overflow-hidden">
                     <img className="w-full" src={image} alt={image} />
                 </div>

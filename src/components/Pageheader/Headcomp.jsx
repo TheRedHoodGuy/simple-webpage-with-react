@@ -5,7 +5,7 @@ import Logo from '../../assets/images/logo.svg'
 const Headcomp = () => {
     return (
         <>
-            <header className="flex w-full items-center mt-7">
+            <header className="flex w-full items-center mt-7 min-[1440px]:mt-[90px]">
                 <div>
                     <img className="w-[45px]" src={Logo} alt="Logo" />
                 </div>

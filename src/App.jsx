@@ -6,9 +6,11 @@ import Imagesection from './components/Imagesection/Imagesection.jsx'
 let App = () => {
   return (
     <>
-      <Headcomp />
-      <Article />
-      <Imagesection />
+      <div className="min-[1440px]:mx-[164px]">
+        <Headcomp />
+        <Article />
+        <Imagesection />
+      </div>
     </>
   )
 }
