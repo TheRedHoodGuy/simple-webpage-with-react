@@ -9,7 +9,7 @@ const Headcomp = () => {
         <div>
           <img className="w-[45px]" src={Logo} alt="Logo" />
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block w-1/2">
           <Navbar />
         </div>
         <div className="lg:hidden">
