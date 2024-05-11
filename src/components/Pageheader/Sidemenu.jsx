@@ -10,7 +10,7 @@ const Sidemenu = () => {
   return (
     <>
       <div className="">
-        <div className="absolute right-[15px] text-right w-40">
+        <div className="absolute right-[15px] text-right w-60">
           <button onClick={toggleMenu}>
             <img
               className={`w-7 ${isMenu ? `mr-[-2px]` : `mr-0`}`}
@@ -19,35 +19,37 @@ const Sidemenu = () => {
             />
           </button>
           <section
-            className={`h-screen bg-white_c ${isMenu ? `block` : `hidden`}`}
+            className={`h-screen pt-20 text-left pl-4 bg-white_c ${
+              isMenu ? `block` : `hidden`
+            }`}
           >
             {/* <div>
                             <img src={X} alt="Close" />
                         </div> */}
-            <nav className="">
+            <nav className="text-md">
               <ul>
-                <li>
-                  <a className="text-sm" href="#" target="_blank">
+                <li className="mb-2">
+                  <a className="" href="#" target="_blank">
                     Home
                   </a>
                 </li>
-                <li>
-                  <a className="text-sm" href="#" target="_blank">
+                <li className="mb-2">
+                  <a className="" href="#" target="_blank">
                     New
                   </a>
                 </li>
-                <li>
-                  <a className="text-sm" href="#" target="_blank">
+                <li className="mb-2">
+                  <a className="" href="#" target="_blank">
                     Popular
                   </a>
                 </li>
-                <li>
-                  <a className="text-sm" href="#" target="_blank">
+                <li className="mb-2">
+                  <a className="" href="#" target="_blank">
                     Trending
                   </a>
                 </li>
-                <li>
-                  <a className="text-sm" href="#" target="_blank">
+                <li className="mb-2">
+                  <a className="" href="#" target="_blank">
                     Categories
                   </a>
                 </li>
