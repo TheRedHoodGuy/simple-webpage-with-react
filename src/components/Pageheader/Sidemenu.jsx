@@ -5,17 +5,20 @@ import Menu from "../../assets/images/icon-menu.svg";
 const Sidemenu = () => {
   const [isMenu, setIsMenu] = useState(false);
 
-  const toggleMenu = () => setIsMenu(!isMenu);
+  const toggleMenu = () => {
+    setIsMenu(!isMenu);
+    document.body.classList.toggle('no-scroll');
+  };
 
   return (
     <>
       <div className="">
         <div
-          className={`absolute left-0 top-0 z-15 h-screen w-screen bg-[#000] bg-opacity-75 ${
+          className={`absolute overflow-y-hidden left-0 top-0 z-15 h-screen w-screen bg-[#000] bg-opacity-75 ${
             isMenu ? `block` : `hidden`
           }`}
         ></div>
-        <div className="absolute top-0 pt-7 z-10 right-0 bg-white_c text-right w-60">
+        <div className="absolute overflow-y-hidden top-0 pt-7 z-10 right-0 bg-white_c text-right w-60">
           <button onClick={toggleMenu} className="mr-[18px]">
             <img
               className={`w-7 ${isMenu ? `mr-[-2px]` : `mr-0`}`}
@@ -63,6 +66,11 @@ const Sidemenu = () => {
           </section>
         </div>
       </div>
+      <style>{`
+          body.no-scroll {
+          overflow: hidden;
+        }
+      `}</style>
     </>
   );
 };

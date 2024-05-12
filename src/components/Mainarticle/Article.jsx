@@ -11,7 +11,7 @@ const Article = () => {
             <img
               className="min-[720px]:hidden visible"
               src={Image}
-              alt="Image"
+              alt="Abstract Image"
             />
             <img
               className="hidden min-[720px]:flex w-full h-full"
